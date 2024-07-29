@@ -11,6 +11,12 @@ a {
     text-decoration: none;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
 .top {
     background-image: url(img/topImage.jpeg);
     background-repeat: no-repeat;
@@ -140,9 +146,7 @@ a {
 }
 
 
-.main {
-    padding-left: 120px;
-}
+.main {}
 
 /*~~~~~   products ~~~~~~~~~~~*/
 .products__header {
@@ -168,6 +172,13 @@ a {
     box-shadow: 4px 4px 10px greenyellow;
 }
 
+.products {
+    display: flex;
+    flex-grow: 1;
+    column-gap: 30px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+}
 
 
 .product__name {
