@@ -149,6 +149,33 @@ a {
 .main {}
 
 /*~~~~~   products ~~~~~~~~~~~*/
+
+.product-for__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+}
+
+.product-for__item {
+    height: 415px;
+    grid-column: span 2;
+    align-self: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: center;
+    align-content: center;
+}
+
+.for_big {
+    grid-column: span 3;
+}
+
+
 .products__header {
     color: rgb(0, 0, 0);
     font-family: Montserrat;
@@ -160,6 +187,8 @@ a {
     padding-top: 64px;
     padding-bottom: 32px;
 }
+
+
 
 .product {
     width: 380px;
