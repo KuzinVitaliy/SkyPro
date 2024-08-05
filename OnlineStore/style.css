@@ -136,7 +136,7 @@ a {
     box-sizing: border-box;
     border: 1px solid white;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 16px;
     background-color: transparent;
     outline: none;
     font-size: 16px;
@@ -275,7 +275,7 @@ a {
 .footer__input {
     width: 288px;
     height: 41px;
-    margin: 5px;
+    margin: 8px 0px;
     padding: 10px;
     width: 260px;
 
@@ -305,6 +305,21 @@ a {
     margin: 5px;
     width: 260px;
     background: rgba(222, 215, 215, 0.41);
+}
+
+.footer__buttom {
+    border-radius: 16px;
+    background: rgba(222, 215, 215, 0.41);
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 260px;
+    height: 40px;
 }
 
 .contact-images {
