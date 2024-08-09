@@ -437,6 +437,11 @@ a {
   box-sizing: border-box;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 20px;
+  padding-left: 20px;
+  background-position: right;
+  background-image: url(img/ArrowDown.png);
+  background-repeat: no-repeat;
+  background-position-x: calc(227px - 25px);
 }
 
 .selector::-moz-placeholder {
@@ -449,6 +454,7 @@ a {
   text-align: left;
   margin-left: 10px;
 }
+
 
 .selector::placeholder {
   color: rgb(255, 255, 255);
