@@ -1,453 +1,581 @@
+@charset "UTF-8";
+
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Montseratt', sans-serif;
+  font-family: "Montseratt", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-
 .top {
-    background-image: url(img/topImage.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(img/topImage.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .top-catalog {
-    background-image: url(img/catalog.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
+  background-image: url(img/catalog.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 00px 16px 20px;
-    border-bottom: 1px;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-color: white;
-    border-style: solid;
-    margin-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px 16px 20px;
+  border-bottom: 1px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 64px;
 }
 
 .subtitle__ton_link {
-    padding-top: 390px
+  padding-top: 390px;
 }
 
 .header__input {
-    width: 288px;
-    height: 41px;
-    color: white;
-
+  width: 288px;
+  height: 41px;
+  color: white;
 }
 
-
 .ton_link {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-decoration-line: none;
-    padding-left: 32px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: none;
+  padding-left: 32px;
 }
 
 .ton_link:hover {
-    text-decoration-line: underline;
-
+  text-decoration-line: underline;
 }
 
 .title {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 70px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .title-catalog {
-    padding-top: 46px;
+  padding-top: 46px;
 }
 
-
 .subtitle {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding: 16px 0 16px 0;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 16px 0 16px 0;
 }
 
 .footer {
-    margin-top: 16px;
-    background: rgb(247, 246, 246);
-    padding-bottom: 64px;
-    padding-top: 32px;
+  margin-top: 16px;
+  background: rgb(247, 246, 246);
+  padding-bottom: 64px;
+  padding-top: 32px;
 }
 
 .menu {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .menu__link {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 156 px;
-    line-height: 20 px;
-    text-decoration: none;
-    padding-left: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 156 px;
+  line-height: 20 px;
+  text-decoration: none;
+  padding-left: 30px;
 }
 
 .menu__link:hover {
-    color: red;
+  color: red;
 }
 
 .footer__logo {
-    height: 44px;
-    width: 198px;
-    padding-left: 10px;
-    padding-top: 10px;
+  height: 44px;
+  width: 198px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
 }
-
-.footer__contacts {
-    /*padding-left: 20%;
-    padding-right: 20%;*/
-}
-
-
 
 .input-text {
-    box-sizing: border-box;
-    border: 1px solid white;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-color: transparent;
-    outline: none;
-    font-size: 16px;
-    line-height: 20px;
-    padding-left: 32px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 32px;
+}
+
+.input-text::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 0px;
 }
 
 .input-text::placeholder {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-left: 0px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 0px;
 }
 
-
-.main {}
-
 /*~~~~~   products ~~~~~~~~~~~*/
-
 .product-for__list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
 }
 
 .product-for__item {
-    height: 415px;
-    grid-column: span 2;
-    align-self: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 34px;
-    font-weight: 600;
-    line-height: 41px;
-    text-align: center;
-    align-content: center;
+  height: 415px;
+  grid-column: span 2;
+  align-self: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 41px;
+  text-align: center;
+  align-content: center;
 }
 
 .for_big {
-    grid-column: span 3;
+  grid-column: span 3;
 }
-
 
 .products__header {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 59px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-top: 64px;
-    padding-bottom: 32px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
 
-
-
 .product {
-    width: 380px;
-
-    /* padding-left: 100px;
-    padding-bottom: 30px; */
+  width: 380px;
+  /* padding-left: 100px;
+  padding-bottom: 30px; */
 }
 
 .product:hover {
-    box-shadow: 4px 4px 10px greenyellow;
+  box-shadow: 4px 4px 10px greenyellow;
 }
 
 .products {
-    display: flex;
-    flex-grow: 1;
-    column-gap: 30px;
-    row-gap: 56px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-grow: 1;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 56px;
+  flex-wrap: wrap;
 }
 
-
 .product__name {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-top: 10px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 10px;
 }
 
 .product__description {
-    color: rgb(136, 136, 136);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-top: 9px;
+  color: rgb(136, 136, 136);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 9px;
 }
 
 .product__price-section {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 .poduct__price {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-top: 12px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 12px;
 }
 
 .product__new-price {
-    color: rgb(5, 5, 5);
+  color: rgb(5, 5, 5);
 }
 
 .product__old-price {
-    color: rgb(136, 136, 136);
-    text-decoration-line: line-through;
+  color: rgb(136, 136, 136);
+  text-decoration-line: line-through;
 }
 
 .poduct__price::after {
-    content: " руб.";
+  content: " руб.";
 }
 
 /*~~~~~   footer ~~~~~~~~~~~*/
 .footer__input {
-    width: 288px;
-    height: 41px;
-    margin: 8px 0px;
-    padding: 10px;
-    width: 260px;
+  width: 288px;
+  height: 41px;
+  margin: 8px 0px;
+  padding: 10px;
+  width: 260px;
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
 
-    box-sizing: border-box;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 16px;
-
-    background: rgb(255, 255, 255);
+.footer__input::-moz-placeholder {
+  color: rgb(196, 196, 196);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .footer__input::placeholder {
-    color: rgb(196, 196, 196);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(196, 196, 196);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
-
 .buttom {
-    box-sizing: border-box;
-    border: 0px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    width: 260px;
-    background: rgba(222, 215, 215, 0.41);
+  box-sizing: border-box;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  width: 260px;
+  background: rgba(222, 215, 215, 0.41);
 }
 
 .footer__buttom {
-    border-radius: 16px;
-    background: rgba(222, 215, 215, 0.41);
-    border: 0px;
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: center;
-    width: 260px;
-    height: 40px;
+  border-radius: 16px;
+  background: rgba(222, 215, 215, 0.41);
+  border: 0px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 260px;
+  height: 40px;
 }
 
 .contact-images {
-    padding-top: 12px;
+  padding-top: 12px;
 }
 
 .contact-image {
-    width: 25;
-    height: 25;
-    margin: 5px;
+  width: 25;
+  height: 25;
+  margin: 5px;
 }
 
 .footer__link {
-    color: rgb(136, 136, 136);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(136, 136, 136);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .main__catalog-go {
-    padding-top: 39px;
-    padding-bottom: 64px;
+  padding-top: 39px;
+  padding-bottom: 64px;
 }
 
 .main__catalog-link {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-decoration-line: underline;
-    padding-top: 39px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+  padding-top: 39px;
 }
 
 .footer__menu {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .footer__link-box {
-    padding-top: 12px;
+  padding-top: 12px;
 }
 
 .news {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* ~~~~~~~~~ Каталог ~~~~~~~~ */
-
 .path {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .section-nav {
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 41px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 41px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .nav-item {
-    color: rgb(0, 0, 0);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0%;
-    text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .selector {
-    /* Group 204 */
-    position: static;
-    width: 227px;
-    height: 40px;
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 5px;
-    box-sizing: border-box;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 20px;
+  /* Group 204 */
+  position: static;
+  width: 227px;
+  height: 40px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 20px;
+}
+
+.selector::-moz-placeholder {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .selector::placeholder {
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-left: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 10px;
 }
+
+.top_cart {
+  background-image: url(img/cart.jpeg);
+  height: 400px;
+}
+
+.cart {
+  display: flex;
+  padding-top: 64px;
+}
+
+.cart__item {
+  display: flex;
+  gap: 31px;
+}
+
+.cart__iamge {
+  width: 173px;
+  height: 173px;
+}
+
+.cart__items {
+  display: grid;
+  grid-template-columns: 1fr 71px;
+  grid-template-rows: 30px 1fr 1fr;
+  flex: auto;
+  padding-right: 30px;
+  border-top: 1px gray solid;
+}
+
+.cart__product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  border-radius: 20px;
+  background: rgb(247, 246, 246);
+  width: 379px;
+  height: 556px;
+}
+
+.order__header {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 42px;
+}
+
+.order__item {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+  border-bottom: 1px solid rgb(202, 205, 216);
+  text-align: left;
+  margin-left: 28px;
+  margin-right: 64px;
+  padding-top: 35px;
+  margin-bottom: 9px;
+}
+
+.order__price {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.order__price__input {
+  padding-top: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  height: 50px;
+  background: rgb(247, 246, 246);
+  width: 40px;
+  border: 0px;
+  height: 30px;
+}
+
+.order__price__input::-moz-placeholder {
+  background: rgb(247, 246, 246);
+}
+
+.order__price__input::placeholder {
+  background: rgb(247, 246, 246);
+}
+
+.order__go {
+  border-radius: 16px;
+  background: rgba(222, 215, 215, 0.41);
+  border: 0px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 260px;
+  height: 40px;
+  padding-bottom: 18px;
+  text-justify: auto;
+  margin-left: 45px;
+  margin-top: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
