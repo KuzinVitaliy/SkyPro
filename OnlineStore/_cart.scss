@@ -1,0 +1,112 @@
+.top_cart {
+    background-image: url(img/cart.jpeg);
+    height: 400px;
+}
+
+.cart {
+    display: flex;
+    padding-top: 64px;
+
+    &__item {
+        display: flex;
+        gap: 31px;
+    }
+
+    &__iamge {
+        width: 173px;
+        height: 173px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 71px;
+        grid-template-rows: 30px 1fr 1fr;
+        flex: auto;
+        padding-right: 30px;
+        border: 1px gray solid;
+    }
+
+    &__product-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.order {
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    width: 379px;
+    height: 556px;
+
+    &__header {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    &__item {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        text-align: left;
+        margin-left: 28px;
+        margin-right: 64px;
+        padding-top: 35px;
+        margin-bottom: 44px - 35px;
+    }
+
+    &__price {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 64px-35px;
+
+        &__input {
+            padding-top: 12px;
+            padding-top: 12px;
+            padding-right: 12px;
+            height: 50px;
+            background: rgb(247, 246, 246);
+            width: 40px;
+            border: 0px;
+            height: 30px;
+        }
+
+        &__input::placeholder {
+            background: rgb(247, 246, 246);
+        }
+    }
+
+    &__go {
+        border-radius: 16px;
+        background: rgba(222, 215, 215, 0.41);
+        border: 0px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 260px;
+        height: 40px;
+        padding-bottom: 18px;
+        text-justify: auto;
+        margin-left: 45px;
+        margin-top: 18px;
+    }
+}
