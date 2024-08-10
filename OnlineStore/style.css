@@ -309,7 +309,7 @@ a {
   text-align: left;
 }
 
-.buttom {
+.button {
   box-sizing: border-box;
   border: 0px solid rgb(255, 255, 255);
   border-radius: 20px;
@@ -319,7 +319,7 @@ a {
   background: rgba(222, 215, 215, 0.41);
 }
 
-.footer__buttom {
+.footer__button {
   border-radius: 16px;
   background: rgba(222, 215, 215, 0.41);
   border: 0px;
@@ -436,6 +436,16 @@ a {
   box-sizing: border-box;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .selector::-moz-placeholder {
@@ -494,6 +504,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: auto;
 }
 .cart__product-name {
   padding-top: 0px;
@@ -541,32 +552,6 @@ a {
   padding-top: 35px;
   margin-bottom: 9px;
 }
-.order__price {
-  color: rgb(0, 0, 0);
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
-  letter-spacing: 0px;
-  text-align: center;
-  margin-top: 29px;
-}
-.order__price__input {
-  padding-top: 12px;
-  padding-top: 12px;
-  padding-right: 12px;
-  height: 50px;
-  background: rgb(247, 246, 246);
-  width: 40px;
-  border: 0px;
-  height: 30px;
-}
-.order__price__input::-moz-placeholder {
-  background: rgb(247, 246, 246);
-}
-.order__price__input::placeholder {
-  background: rgb(247, 246, 246);
-}
 .order__go {
   border-radius: 16px;
   background: rgba(222, 215, 215, 0.41);
@@ -584,6 +569,43 @@ a {
   text-justify: auto;
   margin-left: 45px;
   margin-top: 18px;
+}
+.order__price {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.item-count {
+  width: 71px;
+  height: 51px;
+  align-content: center;
+  justify-content: center;
+  background: rgb(247, 246, 246);
+}
+.item-count__input {
+  height: 50px;
+  width: 47px;
+  border: 0px;
+  height: 27px;
+  background: rgb(247, 246, 246);
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 210%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.item-count__input::-moz-placeholder {
+  background: rgb(247, 246, 246);
+}
+.item-count__input::placeholder {
+  background: rgb(247, 246, 246);
 }
 
 .order__button {
