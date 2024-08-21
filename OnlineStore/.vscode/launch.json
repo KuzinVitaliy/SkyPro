@@ -10,6 +10,13 @@
             "type": "chrome",
             "file": "${workspaceFolder}/index.html",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch TEst",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}/test/test.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

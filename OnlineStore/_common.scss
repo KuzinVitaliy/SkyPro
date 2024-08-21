@@ -1,0 +1,20 @@
+$main-font-family: Montserrat;
+$background-color-01 :rgb(247, 246, 246);
+$main-text-color : rgb(255, 255, 255);
+$buttom-border-radius : 20px;
+
+.button-base {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+}
