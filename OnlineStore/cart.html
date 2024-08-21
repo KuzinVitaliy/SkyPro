@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
     <main class="main center">
         <div class="cart">
             <div class="cart__items">
-                <div class="list__header">
+                <div class="cart__list-header">
                     <div>Товар</div>
                     <div>К-во</div>
                 </div>
@@ -49,14 +52,35 @@
                         <input class="item-count__input" type="number" min="1" step="1" value="1" size="6">
                     </div>
                 </div>
+                <div class="cart__item">
+                    <img class="cart__iamge" src="img/product01.jpeg" alt="">
+                    <div class="cart__product-info">
+                        <p class="product__name cart__product-name">Диван NASTAN</p>
+                        <p class="product__description cart__roduct-description">Модель отличается простотой линий и
+                            форм, отсутствием броского декора.</p>
+                        <p class="poduct__price cart__price">80 000</p>
+                        <p class="item__action">
+                            <a class="cart__action" href="">Избранное</a>
+                            <a class="cart__action" href="">Удалить</a>
+                        </p>
+                    </div>
+                    <div class="item-count">
+                        <input class="item-count__input" type="number" min="1" step="1" value="1" size="6">
+                    </div>
+                </div>
 
             </div>
 
             <div class="order">
                 <h3 class="order__header">Оформление заказа</h3>
+                <input class="input-fio" placeholder="Имя Фамилия" type="text">
+                <input class="input-phone" placeholder="+ 7 904 000 80 80" type="text">
+                <input class="input-address" placeholder="Адрес доставки" type="text">
+                <!-- 
                 <p class="order__item">Имя Фамилия</p>
                 <p class="order__item">+ 7 904 000 80 80</p>
                 <p class="order__item">Адрес доставки</p>
+ -->
                 <p class="order__price">Итого: 128 000 руб.</p>
                 <button class="order__go">Оформить заказа</button>
             </div>

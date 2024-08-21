@@ -431,7 +431,7 @@ a {
     box-sizing: border-box;
     border: 1px solid rgb(196, 196, 196);
     border-radius: $buttom-border-radius;
-     appearance: none;
+    appearance: none;
     color: rgb(0, 0, 0);
     font-family: $main-font-family;
     font-size: 16px;
@@ -452,4 +452,11 @@ a {
     margin-left: 10px;
 }
 
-@import 'cart'
+.filter__location {
+    position: absolute;
+    top: 470px;
+    left: 920px;
+}
+
+@import 'cart';
+@import 'filter';
