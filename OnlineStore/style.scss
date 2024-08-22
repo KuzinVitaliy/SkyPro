@@ -421,13 +421,13 @@ a {
 .selector {
     /* Group 204 */
     position: static;
-    width: 227px;
+    width: 182px;
     height: 40px;
     /* Inside Auto Layout */
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 5px;
+    margin: 0px 15px;
     box-sizing: border-box;
     border: 1px solid rgb(196, 196, 196);
     border-radius: $buttom-border-radius;
@@ -439,6 +439,14 @@ a {
     line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
+    padding-left: 20px;
+    background-image: url("./img/ArrowDown.png");
+    background-repeat: no-repeat;
+    background-position: 150px;
+}
+
+.filter-panel {
+    display: flex;
 }
 
 .selector::placeholder {
@@ -453,9 +461,9 @@ a {
 }
 
 .filter__location {
-    position: absolute;
-    top: 470px;
-    left: 920px;
+    position: relative;
+    top: -40px;
+    left: -10px;
 }
 
 .category {
