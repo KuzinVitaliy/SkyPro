@@ -492,6 +492,22 @@ a {
   left: 920px;
 }
 
+.category__relax {
+  background-image: url("img/ProductRelax.jpeg");
+}
+.category__kitchen {
+  background-image: url("img/ProductKitchen.jpeg");
+}
+.category__kids {
+  background-image: url("img/ProductKids.jpeg");
+}
+.category__bathroom {
+  background-image: url("img/ProductBathroom.jpeg");
+}
+.category__work {
+  background-image: url("img/ProductWork.jpeg");
+}
+
 .button-base, .order__button, .order__go {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
@@ -794,7 +810,7 @@ body {
 
 .radio__input:checked + .radio__label::before {
   border-color: #000;
-  background-image: url("img/check_b.svg");
+  background-image: url("img/vector_b.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -935,7 +951,7 @@ body {
   /* Скрытый элемент */
 }
 .checkbox__input:checked + .checkbox__label::before {
-  background-image: url("img/check_b.svg");
+  background-image: url("img/vector_b.svg");
   background-size: 10px 10px;
   /* Фоновое изображение галочки */
   background-repeat: no-repeat;
@@ -1078,7 +1094,7 @@ body {
 .checkbox__input:checked + .checkbox__label--black::before,
 .checkbox__input:checked + .checkbox__label--blue::before,
 .checkbox__input:checked + .checkbox__label--purple::before {
-  background-image: url("img/check_w.svg");
+  background-image: url("img/vector_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
 }/*# sourceMappingURL=style.css.map */

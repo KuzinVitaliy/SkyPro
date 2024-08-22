@@ -458,5 +458,27 @@ a {
     left: 920px;
 }
 
+.category {
+    &__relax {
+        background-image: url('img/ProductRelax.jpeg');
+    }
+
+    &__kitchen {
+        background-image: url('img/ProductKitchen.jpeg');
+    }
+
+    &__kids {
+        background-image: url('img/ProductKids.jpeg');
+    }
+
+    &__bathroom {
+        background-image: url('img/ProductBathroom.jpeg');
+    }
+
+    &__work {
+        background-image: url('img/ProductWork.jpeg');
+    }
+}
+
 @import 'cart';
 @import 'filter';

@@ -34,11 +34,8 @@
                 <a class="nav-item" href="catalog.html">Каталог товаров</a>
             </div>
             <div class="filter">
-                <select class="selector" name="filter" id="kind-select" >
+                <select class="selector" name="filter" id="kind-select" onclick="SelectFilter()">
                     <option value="">Фильтрация</option>
-                    <option value="kitchen">Кухня</option>
-                    <option value="bedroom">Спальня</option>
-                    <option value="children">Детская</option>
                 </select>
                 <select class="selector" name="order" id="order-select">
                     <option value="">Сортировка</option>
@@ -128,12 +125,11 @@
                     <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
                 </div>
                 <div class="contact-images">
-
-                    <a class="contact-image" href="https://instagram.com"><img src="img/telegram.svg" Инстаграм"
+                    <a class="contact-image" href="https://instagram.com"><img src="img/telegram.svg" alt="Инстаграм"
                             width="25" height="25"></a>
-                    <a class="contact-image" href="https://twitter.com"><img src="img/vk.svg" alt="Инстаграм" width="25"
+                    <a class="contact-image" href="https://twitter.com"><img src="img/vk.svg" alt="twitter" width="25"
                             height="25"></a>
-                    <a class="contact-image" href="https://facebook.com"><img src="img/Vector (2).svg" alt="Инстаграм"
+                    <a class="contact-image" href="https://facebook.com"><img src="img/facebook.svg" alt="facebook"
                             width="25" height="25"></a>
                 </div>
             </section>
@@ -149,7 +145,7 @@
         </div>
     </footer>
 
-    <div class="container center filter__location">
+    <div class="container center filter__location" style="visibility:hidden;" id="filter">
         <div class="filter-button-wrapper">
             <form class="filtering-form" action="#" method="get">
                 <div class="filtering-form__content-wrapper">
@@ -309,7 +305,7 @@
                         </div>
                     </fieldset>
                 </div>
-                <button type="submit" class="filtering-form__button button">
+                <button type="submit" class="filtering-form__button button" onclick="SetFilter()">
                     Применить
                 </button>
             </form>
@@ -319,3 +315,19 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    function SelectFilter() {
+        flt = document.getElementById("filter");
+        if (flt.style.visibility == "visible")
+            flt.style.visibility = "hidden";
+        else
+            flt.style.visibility = "visible";
+    }
+
+    function SetFilter() {
+        flt = document.getElementById("filter");
+        flt.style.visibility = "hidden";
+    }
+
+</script>

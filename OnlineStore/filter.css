@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Montserrat, sans-serif;
   height: 100vh;
@@ -120,9 +121,8 @@ body {
   background-color: #fff;
 }
 
-.radio__input:checked+.radio__label::before {
+.radio__input:checked + .radio__label::before {
   border-color: #000;
-  //background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L7.5 0.5' stroke='black'/%3E%3C/svg%3E%0A");
   background-image: url("img/vector_b.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
@@ -257,74 +257,67 @@ body {
   align-items: center;
   /* Выравнивание по центру по вертикали */
   gap: 10px;
-
   /* Промежуток между элементами 10px */
-  &__input {
-    display: none;
-
-    /* Скрытый элемент */
-    &:checked+.checkbox__label::before {
-      //background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L9 1' stroke='black'/%3E%3C/svg%3E%0A");
-      background-image: url("img/vector_b.svg");
-      background-size: 10px 10px;
-      /* Фоновое изображение галочки */
-      background-repeat: no-repeat;
-      /* Без повтора фонового изображения */
-      background-position: center;
-      /* Позиция фонового изображения по центру */
-      border-color: #000;
-      /* Черная рамка */
-    }
-  }
-
-  &__label {
-    display: flex;
-    /* Flex-контейнер */
-    align-items: center;
-    /* Выравнивание по центру по вертикали */
-    cursor: pointer;
-    /* Курсор в виде указателя при наведении */
-    position: relative;
-    /* Относительное позиционирование */
-    padding-left: 30px;
-    /* Отступ слева 30px */
-    font-size: 14px;
-
-    /* Размер шрифта 14px */
-    &::before {
-      content: "";
-      /* Пустое содержание для псевдоэлемента */
-      display: inline-block;
-      /* Встроенно-блочное отображение */
-      width: 14px;
-      /* Ширина 14px */
-      height: 14px;
-      /* Высота 14px */
-      border: 1px solid #888888;
-      /* Серая рамка толщиной 1px */
-      position: absolute;
-      /* Абсолютное позиционирование */
-      left: 0;
-      /* Позиция слева от родителя */
-      background-color: #fff;
-      /* Белый фон */
-    }
-
-    /* Цвета чекбоксов */
-    &--white::before {
-      background-color: #fff;
-      /* Белый фон */
-      border-color: #808080;
-      /* Серая рамка */
-    }
-
-    &--black::before {
-      background-color: #000;
-      /* Черный фон */
-      border-color: #000;
-      /* Черная рамка */
-    }
-  }
+}
+.checkbox__input {
+  display: none;
+  /* Скрытый элемент */
+}
+.checkbox__input:checked + .checkbox__label::before {
+  background-image: url("img/vector_b.svg");
+  background-size: 10px 10px;
+  /* Фоновое изображение галочки */
+  background-repeat: no-repeat;
+  /* Без повтора фонового изображения */
+  background-position: center;
+  /* Позиция фонового изображения по центру */
+  border-color: #000;
+  /* Черная рамка */
+}
+.checkbox__label {
+  display: flex;
+  /* Flex-контейнер */
+  align-items: center;
+  /* Выравнивание по центру по вертикали */
+  cursor: pointer;
+  /* Курсор в виде указателя при наведении */
+  position: relative;
+  /* Относительное позиционирование */
+  padding-left: 30px;
+  /* Отступ слева 30px */
+  font-size: 14px;
+  /* Размер шрифта 14px */
+  /* Цвета чекбоксов */
+}
+.checkbox__label::before {
+  content: "";
+  /* Пустое содержание для псевдоэлемента */
+  display: inline-block;
+  /* Встроенно-блочное отображение */
+  width: 14px;
+  /* Ширина 14px */
+  height: 14px;
+  /* Высота 14px */
+  border: 1px solid #888888;
+  /* Серая рамка толщиной 1px */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 0;
+  /* Позиция слева от родителя */
+  background-color: #fff;
+  /* Белый фон */
+}
+.checkbox__label--white::before {
+  background-color: #fff;
+  /* Белый фон */
+  border-color: #808080;
+  /* Серая рамка */
+}
+.checkbox__label--black::before {
+  background-color: #000;
+  /* Черный фон */
+  border-color: #000;
+  /* Черная рамка */
 }
 
 .checkbox__label--gray::before {
@@ -411,12 +404,10 @@ body {
   /* Розовая рамка */
 }
 
-.checkbox__input:checked+.checkbox__label--black::before,
-.checkbox__input:checked+.checkbox__label--blue::before,
-.checkbox__input:checked+.checkbox__label--purple::before {
-  //background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L9 1' stroke='white'/%3E%3C/svg%3E%0A");
-
+.checkbox__input:checked + .checkbox__label--black::before,
+.checkbox__input:checked + .checkbox__label--blue::before,
+.checkbox__input:checked + .checkbox__label--purple::before {
   background-image: url("img/vector_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
-}
+}/*# sourceMappingURL=filter.css.map */
