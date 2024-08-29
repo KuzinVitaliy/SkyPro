@@ -53,7 +53,7 @@ a {
     margin-bottom: 64px;
 }
 
-.subtitle__ton_link {
+.subtitle__top-link {
     padding-top: 390px
 }
 
@@ -64,7 +64,7 @@ a {
 }
 
 
-.ton_link {
+.top-link {
     color: $main-text-color;
     font-family: $main-font-family;
     font-size: 16px;
@@ -76,7 +76,7 @@ a {
     padding-left: 32px;
 }
 
-.ton_link:hover {
+.top-link:hover {
     text-decoration-line: underline;
 
 }
@@ -256,7 +256,7 @@ a {
     gap: 32px;
 }
 
-.poduct__price {
+.poduct-price {
     font-family: $main-font-family;
     font-size: 24px;
     font-weight: 500;
@@ -266,16 +266,16 @@ a {
     padding-top: 12px;
 }
 
-.product__new-price {
+.product-price__new {
     color: rgb(5, 5, 5);
 }
 
-.product__old-price {
+.product-price__old {
     color: rgb(136, 136, 136);
     text-decoration-line: line-through;
 }
 
-.poduct__price::after {
+.poduct-price::after {
     content: " руб.";
 }
 
