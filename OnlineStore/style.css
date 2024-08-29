@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Montseratt", sans-serif;
 }
@@ -92,7 +96,7 @@ a {
 .title {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 70px;
   letter-spacing: 0%;
@@ -106,7 +110,7 @@ a {
 .subtitle {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5pem;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0%;
@@ -1105,4 +1109,34 @@ body {
   background-image: url("img/vector_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .title {
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 8px;
+  }
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .title {
+    font-size: 0.5pem;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 0.4pem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
