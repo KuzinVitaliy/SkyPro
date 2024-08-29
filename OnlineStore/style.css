@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button-base, .order__button, .order__go {
+.button-base, .button-order, .order__go {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   background-color: transparent;
@@ -38,6 +38,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 738px;
 }
 
 .top-catalog {
@@ -63,7 +64,7 @@ a {
   margin-bottom: 64px;
 }
 
-.subtitle__ton_link {
+.subtitle__top-link {
   padding-top: 390px;
 }
 
@@ -73,7 +74,7 @@ a {
   color: white;
 }
 
-.ton_link {
+.top-link {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 16px;
@@ -85,7 +86,7 @@ a {
   padding-left: 32px;
 }
 
-.ton_link:hover {
+.top-link:hover {
   text-decoration-line: underline;
 }
 
@@ -185,14 +186,14 @@ a {
 }
 
 /*~~~~~   products ~~~~~~~~~~~*/
-.product-for__list {
+.product__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 32px;
 }
 
-.product-for__item {
+.product__item {
   height: 415px;
   grid-column: span 2;
   align-self: center;
@@ -210,7 +211,7 @@ a {
   grid-column: span 3;
 }
 
-.products__header {
+.products-header {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
   font-size: 48px;
@@ -241,7 +242,7 @@ a {
   flex-wrap: wrap;
 }
 
-.product__name {
+.product-name {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
   font-size: 24px;
@@ -252,7 +253,7 @@ a {
   padding-top: 10px;
 }
 
-.product__description {
+.product-description {
   color: rgb(136, 136, 136);
   font-family: Montserrat;
   font-size: 14px;
@@ -269,7 +270,7 @@ a {
   gap: 32px;
 }
 
-.poduct__price {
+.poduct-price {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
@@ -279,7 +280,7 @@ a {
   padding-top: 12px;
 }
 
-.product__new-price {
+.new-price {
   color: rgb(5, 5, 5);
 }
 
@@ -288,7 +289,7 @@ a {
   text-decoration-line: line-through;
 }
 
-.poduct__price::after {
+.poduct-price::after {
   content: " руб.";
 }
 
@@ -424,9 +425,10 @@ a {
 .section-nav {
   display: flex;
   padding-top: 64px;
-  padding-bottom: 41px;
+  padding-bottom: 36px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  height: 43px;
 }
 
 .nav-item {
@@ -494,7 +496,7 @@ a {
   margin-left: 10px;
 }
 
-.filter__location {
+.filter-location {
   position: relative;
   top: -40px;
   left: -10px;
@@ -516,7 +518,7 @@ a {
   background-image: url("img/ProductWork.jpeg");
 }
 
-.button-base, .order__button, .order__go {
+.button-base, .button-order, .order__go {
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   background-color: transparent;
@@ -532,7 +534,7 @@ a {
   text-align: center;
 }
 
-.top_cart {
+.top-cart {
   background-image: url(img/cart.jpeg);
   height: 400px;
 }

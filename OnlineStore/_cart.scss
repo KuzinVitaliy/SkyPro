@@ -1,6 +1,6 @@
 @import 'common';
 
-.top_cart {
+.top-cart {
     background-image: url(img/cart.jpeg);
     height: 400px;
 }
@@ -193,6 +193,6 @@
 
 }
 
-.order__button {
+.button-order {
     @extend .button-base;
 }
