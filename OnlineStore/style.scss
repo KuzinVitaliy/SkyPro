@@ -28,6 +28,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 738px;
 }
 
 .top-catalog {
@@ -43,7 +44,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 00px 16px 20px;
+    padding: 16px 00px 16px 0px;
     border-bottom: 1px;
     border-left: 0;
     border-top: 0;
@@ -168,14 +169,14 @@ a {
 
 /*~~~~~   products ~~~~~~~~~~~*/
 
-.product-for__list {
+.product-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 32px;
 }
 
-.product-for__item {
+.product-item {
     height: 415px;
     grid-column: span 2;
     align-self: center;
@@ -194,7 +195,7 @@ a {
 }
 
 
-.products__header {
+.products-header {
     color: rgb(0, 0, 0);
     font-family: $main-font-family;
     font-size: 48px;
@@ -228,7 +229,7 @@ a {
 }
 
 
-.product__name {
+.product-name {
     color: rgb(0, 0, 0);
     font-family: $main-font-family;
     font-size: 24px;
@@ -239,7 +240,7 @@ a {
     padding-top: 10px;
 }
 
-.product__description {
+.product-description {
     color: rgb(136, 136, 136);
     font-family: $main-font-family;
     font-size: 14px;
@@ -266,7 +267,9 @@ a {
     padding-top: 12px;
 }
 
-.product-price__new {
+
+.new-price {
+
     color: rgb(5, 5, 5);
 }
 
@@ -405,9 +408,14 @@ a {
 .section-nav {
     display: flex;
     padding-top: 64px;
-    padding-bottom: 41px;
+    padding-bottom: 36px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    height: 43px;
+}
+
+.go_catalog {
+    padding-left: 0px;
 }
 
 
@@ -463,30 +471,30 @@ a {
     margin-left: 10px;
 }
 
-.filter__location {
+.filter-location {
     position: relative;
     top: -40px;
     left: -10px;
 }
 
 .category {
-    &__relax {
+    &-relax {
         background-image: url('img/ProductRelax.jpeg');
     }
 
-    &__kitchen {
+    &-kitchen {
         background-image: url('img/ProductKitchen.jpeg');
     }
 
-    &__kids {
+    &-kids {
         background-image: url('img/ProductKids.jpeg');
     }
 
-    &__bathroom {
+    &-bathroom {
         background-image: url('img/ProductBathroom.jpeg');
     }
 
-    &__work {
+    &-work {
         background-image: url('img/ProductWork.jpeg');
     }
 }
