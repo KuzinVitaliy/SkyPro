@@ -123,7 +123,7 @@ body {
 .radio__input:checked+.radio__label::before {
   border-color: #000;
   //background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L7.5 0.5' stroke='black'/%3E%3C/svg%3E%0A");
-  background-image: url("img/vector_b.svg");
+  background-image: url("img/check_b.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,7 +265,7 @@ body {
     /* Скрытый элемент */
     &:checked+.checkbox__label::before {
       //background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L9 1' stroke='black'/%3E%3C/svg%3E%0A");
-      background-image: url("img/vector_b.svg");
+      background-image: url("img/check_b.svg");
       background-size: 10px 10px;
       /* Фоновое изображение галочки */
       background-repeat: no-repeat;
@@ -416,7 +416,7 @@ body {
 .checkbox__input:checked+.checkbox__label--purple::before {
   //background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3L4.5 6.5L9 1' stroke='white'/%3E%3C/svg%3E%0A");
 
-  background-image: url("img/vector_w.svg");
+  background-image: url("img/check_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
 }

@@ -54,7 +54,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0px 16px 20px;
+  padding: 16px 0px 16px 0px;
   border-bottom: 1px;
   border-left: 0;
   border-top: 0;
@@ -186,14 +186,14 @@ a {
 }
 
 /*~~~~~   products ~~~~~~~~~~~*/
-.product__list {
+.product-list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 32px;
 }
 
-.product__item {
+.product-item {
   height: 415px;
   grid-column: span 2;
   align-self: center;
@@ -431,6 +431,10 @@ a {
   height: 43px;
 }
 
+.go_catalog {
+  padding-left: 0px;
+}
+
 .nav-item {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
@@ -502,19 +506,19 @@ a {
   left: -10px;
 }
 
-.category__relax {
+.category-relax {
   background-image: url("img/ProductRelax.jpeg");
 }
-.category__kitchen {
+.category-kitchen {
   background-image: url("img/ProductKitchen.jpeg");
 }
-.category__kids {
+.category-kids {
   background-image: url("img/ProductKids.jpeg");
 }
-.category__bathroom {
+.category-bathroom {
   background-image: url("img/ProductBathroom.jpeg");
 }
-.category__work {
+.category-work {
   background-image: url("img/ProductWork.jpeg");
 }
 
@@ -820,7 +824,7 @@ body {
 
 .radio__input:checked + .radio__label::before {
   border-color: #000;
-  background-image: url("img/vector_b.svg");
+  background-image: url("img/check_b.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -961,7 +965,7 @@ body {
   /* Скрытый элемент */
 }
 .checkbox__input:checked + .checkbox__label::before {
-  background-image: url("img/vector_b.svg");
+  background-image: url("img/check_b.svg");
   background-size: 10px 10px;
   /* Фоновое изображение галочки */
   background-repeat: no-repeat;
@@ -1104,7 +1108,7 @@ body {
 .checkbox__input:checked + .checkbox__label--black::before,
 .checkbox__input:checked + .checkbox__label--blue::before,
 .checkbox__input:checked + .checkbox__label--purple::before {
-  background-image: url("img/vector_w.svg");
+  background-image: url("img/check_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
 }/*# sourceMappingURL=style.css.map */
