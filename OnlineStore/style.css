@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 .button-base, .button-order, .order__go {
+
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   background-color: transparent;
@@ -18,6 +20,10 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -93,7 +99,7 @@ a {
 .title {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 70px;
   letter-spacing: 0%;
@@ -107,7 +113,7 @@ a {
 .subtitle {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5pem;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0%;
@@ -237,7 +243,7 @@ a {
   display: flex;
   flex-grow: 1;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 56px;
   flex-wrap: wrap;
 }
@@ -280,11 +286,13 @@ a {
   padding-top: 12px;
 }
 
+
 .new-price {
+
   color: rgb(5, 5, 5);
 }
 
-.product__old-price {
+.product-price__old {
   color: rgb(136, 136, 136);
   text-decoration-line: line-through;
 }
@@ -459,8 +467,8 @@ a {
   border: 1px solid rgb(196, 196, 196);
   border-radius: 20px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: rgb(0, 0, 0);
   font-family: Montserrat;
   font-size: 16px;
@@ -509,16 +517,21 @@ a {
 .category-relax {
   background-image: url("img/ProductRelax.jpeg");
 }
-.category-kitchen {
+
+.category__kitchen {
   background-image: url("img/ProductKitchen.jpeg");
 }
-.category-kids {
+
+.category__kids {
   background-image: url("img/ProductKids.jpeg");
 }
-.category-bathroom {
+
+.category__bathroom {
   background-image: url("img/ProductBathroom.jpeg");
 }
-.category-work {
+
+.category__work {
+
   background-image: url("img/ProductWork.jpeg");
 }
 
@@ -547,6 +560,7 @@ a {
   display: flex;
   padding-top: 64px;
 }
+
 .cart__list-header {
   display: flex;
   justify-content: space-between;
@@ -560,6 +574,7 @@ a {
   letter-spacing: 0px;
   text-align: left;
 }
+
 .cart__item {
   display: flex;
   gap: 31px;
@@ -567,32 +582,39 @@ a {
   border-top: 0.5px solid rgb(202, 205, 216);
   padding-bottom: 32px;
 }
+
 .cart__iamge {
   width: 173px;
   height: 173px;
 }
+
 .cart__items {
   display: flex;
   flex-direction: column;
   flex: auto;
   padding-right: 30px;
 }
+
 .cart__product-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex: auto;
 }
+
 .cart__product-name {
   padding-top: 0px;
 }
+
 .cart__roduct-description {
   padding: 0px;
   max-width: 276px;
 }
+
 .cart__price {
   padding: 0px;
 }
+
 .cart__action {
   text-decoration: underline;
   padding-right: 30px;
@@ -623,6 +645,7 @@ a {
   width: 379px;
   height: 556px;
 }
+
 .order__header {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
@@ -633,6 +656,7 @@ a {
   text-align: center;
   padding-top: 42px;
 }
+
 .order__item {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
@@ -648,6 +672,7 @@ a {
   padding-top: 35px;
   margin-bottom: 9px;
 }
+
 .order__go {
   width: 260px;
   height: 40px;
@@ -657,6 +682,7 @@ a {
   margin-top: 18px;
   align-self: center;
 }
+
 .order__price {
   color: rgb(0, 0, 0);
   font-family: Montserrat;
@@ -675,6 +701,7 @@ a {
   justify-content: center;
   background: rgb(247, 246, 246);
 }
+
 .item-count__input {
   height: 50px;
   width: 47px;
@@ -689,12 +716,15 @@ a {
   letter-spacing: 0px;
   text-align: center;
 }
+
 .item-count__input::-moz-placeholder {
   background: rgb(247, 246, 246);
 }
+
 .item-count__input::placeholder {
   background: rgb(247, 246, 246);
 }
+
 .item-count__input::-webkit-inner-spin-button {
   -webkit-appearance: inner-spin-button !important;
   opacity: 3 !important;
@@ -822,7 +852,7 @@ body {
   background-color: #fff;
 }
 
-.radio__input:checked + .radio__label::before {
+.radio__input:checked+.radio__label::before {
   border-color: #000;
   background-image: url("img/check_b.svg");
   background-size: 10px 10px;
@@ -960,12 +990,15 @@ body {
   gap: 10px;
   /* Промежуток между элементами 10px */
 }
+
 .checkbox__input {
   display: none;
   /* Скрытый элемент */
 }
+
 .checkbox__input:checked + .checkbox__label::before {
   background-image: url("img/check_b.svg");
+
   background-size: 10px 10px;
   /* Фоновое изображение галочки */
   background-repeat: no-repeat;
@@ -975,6 +1008,7 @@ body {
   border-color: #000;
   /* Черная рамка */
 }
+
 .checkbox__label {
   display: flex;
   /* Flex-контейнер */
@@ -990,6 +1024,7 @@ body {
   /* Размер шрифта 14px */
   /* Цвета чекбоксов */
 }
+
 .checkbox__label::before {
   content: "";
   /* Пустое содержание для псевдоэлемента */
@@ -1008,12 +1043,14 @@ body {
   background-color: #fff;
   /* Белый фон */
 }
+
 .checkbox__label--white::before {
   background-color: #fff;
   /* Белый фон */
   border-color: #808080;
   /* Серая рамка */
 }
+
 .checkbox__label--black::before {
   background-color: #000;
   /* Черный фон */
@@ -1105,10 +1142,50 @@ body {
   /* Розовая рамка */
 }
 
+
 .checkbox__input:checked + .checkbox__label--black::before,
 .checkbox__input:checked + .checkbox__label--blue::before,
 .checkbox__input:checked + .checkbox__label--purple::before {
   background-image: url("img/check_w.svg");
+
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 8px;
+  }
+
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title {
+    font-size: 0.5pem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.4pem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

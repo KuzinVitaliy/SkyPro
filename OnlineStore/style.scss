@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Montseratt', sans-serif;
 }
@@ -58,7 +62,6 @@ a {
     width: 288px;
     height: 41px;
     color: white;
-
 }
 
 
@@ -82,7 +85,7 @@ a {
 .title {
     color: $main-text-color;
     font-family: $main-font-family;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 70px;
     letter-spacing: 0%;
@@ -97,7 +100,7 @@ a {
 .subtitle {
     color: $main-text-color;
     font-family: $main-font-family;
-    font-size: 24px;
+    font-size: 1.5pem;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0%;
@@ -264,11 +267,13 @@ a {
     padding-top: 12px;
 }
 
+
 .new-price {
+
     color: rgb(5, 5, 5);
 }
 
-.product__old-price {
+.product-price__old {
     color: rgb(136, 136, 136);
     text-decoration-line: line-through;
 }
@@ -496,3 +501,39 @@ a {
 
 @import 'cart';
 @import 'filter';
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 8px;
+    }
+
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .title {
+        font-size: 0.5pem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 0.4pem;
+        text-align: center;
+    }
+}
