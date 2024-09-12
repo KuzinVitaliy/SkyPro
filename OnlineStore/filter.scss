@@ -1,4 +1,38 @@
-body {
+@import 'common';
+
+.filter-panel {
+  display: flex;
+  height: auto;
+}
+
+.selector {
+  /* Group 204 */
+  position: static;
+  width: 182px;
+  height: 40px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: $button-border-radius;
+  appearance: none;
+  color: rgb(0, 0, 0);
+  font-family: $font-name;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 20px;
+  background-image: url("./img/ArrowDown.png");
+  background-repeat: no-repeat;
+  background-position: 150px;
+}
+
+.body {
   font-family: Montserrat, sans-serif;
   height: 100vh;
   font-size: 16px;
@@ -14,6 +48,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   justify-content: flex-end;
+  height: auto;
 }
 
 .button {

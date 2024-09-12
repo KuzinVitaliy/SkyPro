@@ -1,0 +1,107 @@
+@import'common';
+
+.for {
+    padding-top: 64px;
+}
+
+.for-elements {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+    width: 100%;
+}
+
+.for-item {
+    grid-column: span 2;
+    align-content: center;
+    min-width: 379px;
+    width: auto;
+    max-width: 100%;
+    min-height: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.for-item-big {
+    grid-column: span 3;
+
+}
+
+.for-elements {
+    justify-content: center;
+}
+
+.category {
+    &-relax {
+        background-image: url('img/ProductRelax.jpeg');
+    }
+
+    &-kitchen {
+        background-image: url('img/ProductKitchen.jpeg');
+    }
+
+    &-kids {
+        background-image: url('img/ProductKids.jpeg');
+    }
+
+    &-bathroom {
+        background-image: url('img/ProductBathroom.jpeg');
+    }
+
+    &-work {
+        background-image: url('img/ProductWork.jpeg');
+    }
+
+    &-caption {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+
+/*#endregion */
+
+/* #region Специальное предложение */
+
+
+
+
+/* #endregion */
+
+
+/* форматирования для планшета*/
+/*#region table-version*/
+
+@media ((max-width: $mainWidthPlan) and (min-width:calc($mainWidthMob + 1px))) {
+    .for-item {
+        min-width: 242px;
+        min-height: 265px;
+    }
+
+
+}
+
+/* форматирования для мобильного устройства*/
+/*#region mobile-version */
+@media (max-width: $mainWidthMob) {
+    $mainWidth : 480;
+
+    .for-item {
+        min-width: 343px;
+        min-height: 244px;
+    }
+
+    .for-item-big {
+        grid-column: span 2;
+    }
+
+    .for-elements {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
+}

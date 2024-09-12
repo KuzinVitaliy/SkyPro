@@ -1,0 +1,60 @@
+@import 'common';
+@import 'filter';
+
+.top {
+    background-image: url(./img/catalog.jpeg);
+    height: auto;
+}
+
+.header__title {
+    margin-top: 128px;
+    margin-bottom: 40px;
+
+}
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top__header {
+    height: 400px;
+}
+
+.catalog-item {
+    min-width: 379;
+}
+
+.catalog-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    height: auto;
+
+    &__item {
+        color: rgb(0, 0, 0);
+        font-family: $font-name;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+
+
+/* форматирования для планшета*/
+/*#region table-version*/
+
+@media ((max-width: $mainWidthPlan) and (min-width:calc($mainWidthMob + 1px))) {}
+
+/*#endregion */
+
+/* форматирования для мобильного устройства*/
+/*#region mobile-version */
+@media (max-width: $mainWidthMob) {
+    $mainWidth : 480;
+}
+
+/*#endregion*/

@@ -14,6 +14,21 @@
   border: 1px blue solid;
 }
 
+/* рамка для тестирования  */
+.testBorder01 {
+  border: 1px red solid;
+}
+
+/* рамка для тестирования  */
+.testBorder02 {
+  border: 1px green solid;
+}
+
+/* рамка для тестирования  */
+.testBorder03 {
+  border: 1px blue solid;
+}
+
 .filter-panel {
   display: flex;
   height: auto;
@@ -460,4 +475,50 @@
   background-image: url("img/check_w.svg");
   background-size: 10px 10px;
   /* Фоновое изображение белой галочки */
-}/*# sourceMappingURL=filter.css.map */
+}
+
+.top {
+  background-image: url(./img/catalog.jpeg);
+  height: auto;
+}
+
+.header__title {
+  margin-top: 128px;
+  margin-bottom: 40px;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top__header {
+  height: 400px;
+}
+
+.catalog-item {
+  min-width: 379;
+}
+
+.catalog-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  height: auto;
+}
+.catalog-menu__item {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* форматирования для планшета*/
+/*#region table-version*/
+/*#endregion */
+/* форматирования для мобильного устройства*/
+/*#region mobile-version */
+/*#endregion*//*# sourceMappingURL=catalog.css.map */
