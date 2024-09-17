@@ -112,9 +112,9 @@
 .order {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   border-radius: 20px;
   background: rgb(247, 246, 246);
+  justify-content: center;
   padding-top: 42px;
   padding-left: 28px;
   padding-right: 28px;
@@ -126,13 +126,6 @@
   border-bottom: 1px solid rgb(202, 205, 216);
   padding-top: 41px;
   background-color: transparent;
-  outline: none;
-}
-.order-input:focus::-moz-placeholder {
-  border: 0px;
-}
-.order-input:focus::placeholder {
-  border: 0px;
 }
 .order-total {
   color: rgb(0, 0, 0);
