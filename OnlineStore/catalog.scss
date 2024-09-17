@@ -55,6 +55,28 @@
 /*#region mobile-version */
 @media (max-width: $mainWidthMob) {
     $mainWidth : 480;
+
+    .catalog-menu {
+        flex-direction: column;
+        height: 100px;
+        padding-top: 32px;
+    }
+
+    .filter-panel {
+        flex-direction: column;
+    }
+
+    .catalog {
+        margin-top: 40px;
+    }
+
+    .ddd {
+        height: 50px;
+    }
+
+    .selector {
+        margin: 0px;
+    }
 }
 
 /*#endregion*/

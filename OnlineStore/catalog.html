@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -45,8 +45,7 @@
         </p>
         <div class="filter-panel">
             <div class="ddd">
-                <select class="selector" name="filter" id="kind-select" onclick="SelectFilter()"
-                    placeholder="Фильтрация">
+                <select class="selector" name="filter" id="kind-select" onclick="SelectFilter()">
                     <option value="">Фильтрация</option>
                 </select>
                 <div class="container center filter-location" style="visibility:hidden;" id="filter">
@@ -242,9 +241,9 @@
 
     </div>
 
-    <section class="content center">
+    <div class="content center">
 
-        <section class="catalog">
+        <div class="catalog">
 
             <div class="product-list">
                 <div class="product">
@@ -365,9 +364,9 @@
                 </div>
             </div>
             <div></div>
-        </section>
+        </div>
         <a href="./catalog.html" class="bottom-link">Показать еще</a>
-    </section>
+    </div>
     <div class="bottom center">
         <footer class="footer">
             <a href="index.html" class="footer-logo"><img src="./img/logo_footer.svg" alt="Логотип"></a>
@@ -381,8 +380,8 @@
                 <div class="contacts">
                     <div class="footer-menu-header">Контакты</div>
                     <a class="contact-item" href="tel:+79088008080">+7 908 800 80 80</a>
-                    <a class="contact-item" href="mailto:" help@interier.com>help@interier.com</a>
-                    <div class="socials">
+                    <a class="contact-item" href="mailto:help@interier.com">help@interier.com</a>
+                    <div class=" socials">
                         <a class="socials-item" href="http://vk.com"><img class="item-image" src="./img/vk.svg"
                                 alt=""></a>
                         <a class="socials-item" href="http://telegram.com"><img src="./img/telegram.svg" alt=""></a>
@@ -390,18 +389,18 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <form action="subscription" class="subscription">
-                    <div class="subscription__caption">Получайте наши новости и обновления</div>
-                    <input class="subscription__email" type="email" name="email" id="email" placeholder="Ваш e-mail">
-                    <button class="subscription__button" type="submit">Подписаться</button>
-                </form>
-            </div>
+
+            <form action="subscription" class="subscription">
+                <div class="subscription__caption">Получайте наши новости и обновления</div>
+                <input class="subscription__email" type="email" name="email" id="email" placeholder="Ваш e-mail">
+                <button class="subscription__button" type="submit">Подписаться</button>
+            </form>
+
         </footer>
     </div>
 </body>
 
-</html>
+
 
 <script type="text/javascript">
     function SelectFilter() {
@@ -416,3 +415,5 @@
     }
 
 </script>
+
+</html>

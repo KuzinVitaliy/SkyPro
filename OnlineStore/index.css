@@ -94,4 +94,11 @@
   .for-elements {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
+  .logo-image {
+    height: 22px;
+    width: 99px;
+  }
+  .for {
+    padding-top: 32px;
+  }
 }/*# sourceMappingURL=index.css.map */
