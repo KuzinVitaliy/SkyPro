@@ -77,7 +77,7 @@
 /* форматирования для планшета*/
 /*#region table-version*/
 
-@media ((max-width: $mainWidthPlan) and (min-width:calc($mainWidthMob + 1px))) {
+@media ((max-width: $mainWidth) and (min-width:calc($mainWidthPlan + 1px))) {
     .for-item {
         min-width: 242px;
         min-height: 265px;
@@ -88,7 +88,7 @@
 
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: $mainWidthMob) {
+@media (max-width: $mainWidthPlan) {
     $mainWidth : 480;
 
     .for-item {

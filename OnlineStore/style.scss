@@ -16,6 +16,7 @@ a {
     text-decoration: none;
     color: white;
     transition: transform 1s;
+    font-family: $font-name;
 }
 
 .menu-ref {
@@ -50,6 +51,7 @@ a:hover {
 .center {
     padding-left: calc(50% - $mainWidth/2);
     padding-right: calc(50% - $mainWidth/2);
+    justify-content: center;
 }
 
 /*#region Верхняя часть*/
@@ -93,6 +95,7 @@ a:hover {
     outline: none;
     font-size: 1rem;
     max-width: 288px;
+    width: 288px;
     min-width: 100px;
     height: 41px;
     color: white;
@@ -377,6 +380,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 260px;
 
     &__email {
         @extend .input-default;
@@ -429,7 +433,8 @@ a:hover {
 /* форматирования для планшета*/
 /*#region table-version*/
 
-@media ((max-width: $mainWidthPlan) and (min-width:calc($mainWidthMob + 1px))) {
+@media ((max-width: $mainWidth) and (min-width:calc($mainWidthPlan + 1px)))
+{
     $mainWidth :$mainWidthPlan;
 
     .center {
@@ -461,14 +466,18 @@ a:hover {
 
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: $mainWidthMob) {
+@media (max-width: $mainWidthPlan) {
     $mainWidth : $mainWidthMob;
 
     .center {
-        /*        padding-left: calc(50% - $mainWidthMob / 2);
-        padding-right: calc(50% - $mainWidthMob / 2);*/
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - $mainWidthMob / 2);
+        padding-right: calc(50% - $mainWidthMob / 2);
+        //padding-left: 16px;
+        //padding-right: 16px;
+    }
+
+    .product-image-spec {
+        justify-content: center;
     }
 
     .header__navbar {
