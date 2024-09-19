@@ -91,8 +91,12 @@
 @media (max-width: $mainWidthPlan) {
     $mainWidth : 480;
 
+    .header__title {
+        padding-top: 29px;
+    }
+
     .for-item {
-        min-width: 343px;
+        min-width: $mainWidthMob;
         min-height: 244px;
     }
 
@@ -111,6 +115,10 @@
 
     .for {
         padding-top: 32px;
+    }
 
+    .bottom {
+        height: auto;
+        justify-self: center;
     }
 }

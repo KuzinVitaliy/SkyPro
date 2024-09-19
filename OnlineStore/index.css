@@ -84,6 +84,9 @@
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
 @media (max-width: 785px) {
+  .header__title {
+    padding-top: 29px;
+  }
   .for-item {
     min-width: 343px;
     min-height: 244px;
@@ -100,5 +103,9 @@
   }
   .for {
     padding-top: 32px;
+  }
+  .bottom {
+    height: auto;
+    justify-self: center;
   }
 }/*# sourceMappingURL=index.css.map */
