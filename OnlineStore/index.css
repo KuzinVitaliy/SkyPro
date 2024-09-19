@@ -75,7 +75,7 @@
 /* #endregion */
 /* форматирования для планшета*/
 /*#region table-version*/
-@media ((max-width: 786px) and (min-width: 415px)) {
+@media ((max-width: 1200px) and (min-width: 786px)) {
   .for-item {
     min-width: 242px;
     min-height: 265px;
@@ -83,7 +83,7 @@
 }
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 414px) {
+@media (max-width: 785px) {
   .for-item {
     min-width: 343px;
     min-height: 244px;

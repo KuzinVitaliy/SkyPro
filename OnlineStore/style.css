@@ -43,6 +43,7 @@ a {
   text-decoration: none;
   color: white;
   transition: transform 1s;
+  font-family: Montserrat;
 }
 
 .menu-ref {
@@ -76,6 +77,7 @@ a:hover {
 .center, .top__header {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  justify-content: center;
 }
 
 /*#region Верхняя часть*/
@@ -108,6 +110,7 @@ a:hover {
   outline: none;
   font-size: 1rem;
   max-width: 288px;
+  width: 288px;
   min-width: 100px;
   height: 41px;
   color: white;
@@ -389,6 +392,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 260px;
 }
 .subscription__email {
   height: 40px;
@@ -429,10 +433,10 @@ a:hover {
 /* #endregion */
 /* форматирования для планшета*/
 /*#region table-version*/
-@media ((max-width: 786px) and (min-width: 415px)) {
+@media ((max-width: 1200px) and (min-width: 786px)) {
   .center, .top__header {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 392.5px);
+    padding-right: calc(50% - 392.5px);
   }
   .navbar-mobile {
     display: none;
@@ -453,12 +457,13 @@ a:hover {
 /*#endregion */
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 414px) {
+@media (max-width: 785px) {
   .center, .top__header {
-    /*        padding-left: calc(50% - $mainWidthMob / 2);
-    padding-right: calc(50% - $mainWidthMob / 2);*/
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .product-image-spec {
+    justify-content: center;
   }
   .header__navbar {
     padding: 10px 10px;

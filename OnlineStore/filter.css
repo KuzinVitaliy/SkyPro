@@ -463,7 +463,7 @@
   /* Фоновое изображение белой галочки */
 }
 
-@media (max-width: 414px) {
+@media (max-width: 343px) {
   .selector {
     margin: 0px;
   }

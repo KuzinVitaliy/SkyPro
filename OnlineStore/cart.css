@@ -176,7 +176,7 @@
 
 /* форматирования для планшета*/
 /*#region table-version*/
-@media ((max-width: 786px) and (min-width: 415px)) {
+@media ((max-width: 1200px) and (min-width: 786px)) {
   .cart {
     flex-direction: column;
   }
@@ -186,7 +186,7 @@
 }
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 414px) {
+@media (max-width: 785px) {
   .cart {
     flex-direction: column;
   }
