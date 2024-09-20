@@ -482,6 +482,11 @@
   .selector {
     margin: 0px;
   }
+  .filtering-form__content-wrapper {
+    flex-wrap: nowrap;
+    max-height: auto;
+    min-width: auto;
+  }
 }
 .top {
   background-image: url(./img/catalog.jpeg);
