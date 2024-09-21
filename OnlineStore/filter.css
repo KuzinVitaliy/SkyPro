@@ -463,8 +463,17 @@
   /* Фоновое изображение белой галочки */
 }
 
-@media (max-width: 414px) {
+@media (max-width: 785px) {
   .selector {
     margin: 0px;
+  }
+  .filtering-form__content-wrapper {
+    flex-wrap: nowrap;
+    max-height: 900px;
+    min-width: auto;
+  }
+  .filter-location {
+    left: -25px;
+    top: -45px;
   }
 }/*# sourceMappingURL=filter.css.map */

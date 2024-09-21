@@ -101,6 +101,8 @@
   gap: 32px 65px;
   max-height: 548px;
   min-width: 540px;
+
+  //flex-wrap: nowrap;
 }
 
 .filtering-form__fieldset {
@@ -458,11 +460,23 @@
   /* Фоновое изображение белой галочки */
 }
 
-@media (max-width: $mainWidthMob) {
+@media (max-width: $mainWidthPlan) {
   $mainWidth : 480;
 
 
   .selector {
     margin: 0px;
   }
+
+  .filtering-form__content-wrapper {
+    flex-wrap: nowrap;
+    max-height: 900px;
+    min-width: auto;
+  }
+
+  .filter-location {
+    left: -25px;
+    top: -45px;
+  }
+
 }

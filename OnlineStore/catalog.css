@@ -478,9 +478,14 @@
   /* Фоновое изображение белой галочки */
 }
 
-@media (max-width: 414px) {
+@media (max-width: 343px) {
   .selector {
     margin: 0px;
+  }
+  .filtering-form__content-wrapper {
+    flex-wrap: nowrap;
+    max-height: auto;
+    min-width: auto;
   }
 }
 .top {
@@ -527,7 +532,7 @@
 /*#endregion */
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 414px) {
+@media (max-width: 785px) {
   .catalog-menu {
     flex-direction: column;
     height: 100px;

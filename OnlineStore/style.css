@@ -43,6 +43,7 @@ a {
   text-decoration: none;
   color: white;
   transition: transform 1s;
+  font-family: Montserrat;
 }
 
 .menu-ref {
@@ -73,9 +74,10 @@ a:hover {
 }
 
 /*Выравнивание по центру экрана с отступами*/
-.center, .top__header {
+.center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  justify-content: center;
 }
 
 /*#region Верхняя часть*/
@@ -85,7 +87,6 @@ a:hover {
   background-position: center;
   background-size: cover;
   height: 738px;
-  width: 100%;
 }
 .header {
   background-color: transparent;
@@ -108,6 +109,7 @@ a:hover {
   outline: none;
   font-size: 1rem;
   max-width: 288px;
+  width: 288px;
   min-width: 100px;
   height: 41px;
   color: white;
@@ -201,7 +203,6 @@ a:hover {
 }
 
 .bottom {
-  height: 200px;
   max-width: 100%;
 }
 .bottom__footer {
@@ -227,7 +228,7 @@ a:hover {
   letter-spacing: 0%;
   text-align: left;
   padding-bottom: 32px;
-  padding-top: 0px;
+  padding-top: 40px;
 }
 
 .product-list {
@@ -248,7 +249,6 @@ a:hover {
 
 .product-image {
   image-rendering: auto;
-  width: auto;
 }
 
 .product-name {
@@ -389,6 +389,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 260px;
 }
 .subscription__email {
   height: 40px;
@@ -429,10 +430,10 @@ a:hover {
 /* #endregion */
 /* форматирования для планшета*/
 /*#region table-version*/
-@media ((max-width: 786px) and (min-width: 415px)) {
-  .center, .top__header {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+@media ((max-width: 1200px) and (min-width: 786px)) {
+  .center {
+    padding-left: calc(50% - 392.5px);
+    padding-right: calc(50% - 392.5px);
   }
   .navbar-mobile {
     display: none;
@@ -449,16 +450,21 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .product-image {
+    image-rendering: 785px;
+  }
 }
 /*#endregion */
 /* форматирования для мобильного устройства*/
 /*#region mobile-version */
-@media (max-width: 414px) {
-  .center, .top__header {
-    /*        padding-left: calc(50% - $mainWidthMob / 2);
-    padding-right: calc(50% - $mainWidthMob / 2);*/
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 785px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .product-image-spec {
+    justify-content: center;
+    max-width: 343px;
   }
   .header__navbar {
     padding: 10px 10px;
@@ -533,7 +539,7 @@ a:hover {
     padding-bottom: 32px;
   }
   .subscription {
-    width: 100%;
+    width: 375px;
     padding-top: 32px;
     padding-bottom: 32px;
     background: rgb(247, 246, 246);
@@ -541,6 +547,9 @@ a:hover {
   .subscription__caption {
     font-size: 12px;
     font-weight: 400;
+  }
+  .product-image {
+    max-width: 343px;
   }
 }
 /*#endregion*//*# sourceMappingURL=style.css.map */
